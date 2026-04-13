@@ -13,9 +13,13 @@ Proyek belajar dasar-dasar bahasa Go.
 go run .
 ```
 
-## Materi yang Dipelajari
+Program akan menampilkan menu interaktif untuk memilih latihan.
 
-- Variabel dan tipe data
-- Percabangan (`if-else`)
-- Perulangan (`for`)
-- Fungsi
+## Daftar Latihan
+
+| No | File | Materi |
+|----|------|--------|
+| 1 | `latihan1.go` | Variabel, tipe data, `if-else`, `for`, fungsi |
+| 2 | `latihan2.go` | Struct, pointer, passing by reference |
+| 3 | `latihan3.go` | Struct, error handling, multi-return |
+| 4 | `Latihan4.go` | Slice of struct, `range` loop |
