@@ -1,3 +1,4 @@
+// Menu interaktif untuk memilih dan menjalankan latihan Go.
 package main
 
 import (
@@ -8,8 +9,10 @@ import (
 )
 
 func main() {
+	// Membuat reader untuk membaca input dari user
 	reader := bufio.NewReader(os.Stdin)
 
+	// Tampilkan menu pilihan latihan
 	fmt.Println("=== Golang Basic Learning ===")
 	fmt.Println("Pilih latihan:")
 	fmt.Println("1. Latihan 1 - Variabel, Kondisi, Perulangan, Fungsi")
@@ -18,11 +21,13 @@ func main() {
 	fmt.Println("4. Latihan 4 - Slice of Struct & Range")
 	fmt.Print("\nMasukkan pilihan (1-4): ")
 
+	// Baca dan bersihkan input user
 	input, _ := reader.ReadString('\n')
 	input = strings.TrimSpace(input)
 
 	fmt.Println()
 
+	// Jalankan latihan sesuai pilihan user
 	switch input {
 	case "1":
 		Latihan1()
